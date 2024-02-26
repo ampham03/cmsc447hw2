@@ -1,5 +1,5 @@
 # cmsc447hw2
-1. run "python3 users_db.py"
-2.
-
+1. open a terminal in the hw2 folder
+2. enter in this command on the command line: "run flask"
+3. click on the link
 
