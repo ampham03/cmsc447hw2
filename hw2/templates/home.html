@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset = "utf-8" />
+    <title>Home</title>
+    <link rel="stylesheet" type = "text/css" href = "/static/style.css" />
+</head>
+
+<body>
+    <p>
+        <div class = "btns">
+            <div class = "text-right">
+                <a href = "/add_user"><button class = "left-btn btn">Add User</button></a>
+            </div>
+            <div class = "text-left">
+                <form action = "/search_user">
+                    <input type = "text" placeholder = "Search User..." name = "name">
+                    <button class = "btn" type = "submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </p>
+  
+    <table class = "center">  
+        <thead>  
+            <th>Name</th>  
+            <th>ID</th>  
+            <th>Points</th>  
+            <th>Edit</th>  
+            <th>Remove</th>  
+        </thead>  
+        <tbody>
+        {% for row in datas %}  
+            <tr>  
+                <td>{{row.NAME}}</td>  
+                <td>{{row.ID}}</td>  
+                <td>{{row.POINTS}}</td>   
+                <td><a href = "/edit_user/{{row.NAME}}" class = "btn">Edit</a></td>
+                <td><a href = "/remove_user/{{row.NAME}}" class = "btn">Remove</a></td>
+            </tr>   
+        {% endfor %}  
+        </tbody>  
+    </table>   
+</body>
+
+</html>

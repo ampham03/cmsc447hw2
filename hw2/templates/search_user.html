@@ -1,0 +1,32 @@
+<!DOCTYPE html>  
+<html>  
+
+<head>  
+    <meta charset = "utf-8"/>
+    <title>Search User</title>
+    <link rel = "stylesheet" type="text/css" href = "/static/style.css"/> 
+</head>  
+
+<body>    
+    <a href = "/home"><button class = "btn search-btn">Home</button></a>
+    <form action = "/search_user" method = "get">  
+        <table class = "center add-user">  
+            <thead>  
+                <th>Name</th>  
+                <th>ID</th>  
+                <th>Points</th>  
+            </thead> 
+            <tbody>
+                {% for row in datas %}  
+                <tr>  
+                    <td>{{row.NAME}}</td>  
+                    <td>{{row.ID}}</td>  
+                    <td>{{row.POINTS}}</td>  
+                </tr>   
+                {% endfor %}  
+            </tbody> 
+        </table>  
+    </form>  
+</body>  
+
+</html>

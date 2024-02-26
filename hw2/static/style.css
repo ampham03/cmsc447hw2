@@ -1,0 +1,65 @@
+.center {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-user {
+    top: 100px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.text-right {
+    text-align: center;
+    margin-left: 460px;
+}
+
+.text-left {
+    text-align: center;
+    margin-right: 460px;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.add-btn {
+    position: absolute;
+    top: 300px;
+    right: 585px;
+}
+
+.search-btn {
+    position: relative;
+    top: 80px;
+    left: 780px;
+}
+
+.left-btn {
+    margin-right: auto;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
